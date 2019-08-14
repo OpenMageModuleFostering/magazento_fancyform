@@ -1,0 +1,143 @@
+.container {
+    background: white;
+}
+.fcf-contact a{
+    color: #ddd;
+    text-decoration: none;
+}
+.fcf-contact a.active, .fcf-contact a:hover{
+    color: black;
+}
+.fcf-contact .clr{
+    clear: both;
+}
+/* Main page */
+/* Contact */
+.fcf-envelope {
+    background: url(images/envelope-bg.png) no-repeat bottom;
+    width: 685px;
+    height: 400px;
+    position: relative;
+    font-family: 'Oswald',sans-serif;
+/*    margin-left: -22px;*/
+    }
+.fcf-envelope-ft {
+    background: url(images/envelope-ft.png) no-repeat bottom;
+    width:685px;
+    height:350px;
+    bottom:0px;
+    z-index:100;
+    position: absolute;
+}
+.fcf-contact {
+    width: 685px;
+    overflow: hidden;
+    position:relative;
+    min-height:500px;
+}
+.fcf-letter {
+    background: url(images/letter.png) repeat;
+    width:680px;
+    height:400px;
+    margin: 0px auto;
+    position: relative;
+}
+.fcf-stamp {
+    -webkit-transform: rotate(10deg);
+    background: url(images/stamp/photo.jpg) no-repeat 20px 20px;
+    height: 154px;
+    position: absolute;
+    width: 134px;
+}
+.fcf-stamp-borders {
+    background: url(images/stamp/stamp.png) no-repeat;
+    height: 154px;
+    width: 134px;
+    position: absolute;
+}
+.fcf-lines {
+    background: url(images/stamp/lines.png) no-repeat;
+    height: 60px;
+    position: absolute;
+    width: 111px;
+    bottom: 12px;
+    left: 12px;
+}
+.fcf-contact-form .left{
+    width: 330px;
+    height: 380px;
+    float: left;
+    padding:15px;
+}
+.fcf-contact-form .right{
+    width: 300px;
+    height: 240px;
+    float: right;
+    padding:100px 10px 10px 10px;
+}
+.fcf-contact-form label{
+    width: 350px;
+    min-height: 23px;
+    color: #3E022F;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    float: left;
+}
+.fcf-contact-form textarea {
+    width: 330px;
+    height: 280px;
+    overflow: hidden;
+    }
+.fcf-contact-form .input {
+    width: 285px;
+    height: 30px;
+}
+.fcf-contact-form .textarea, .fcf-contact-form .input, .fcf-contact-form .submit {
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background: #FFF;
+    outline: none;
+    border: 0;
+    float: left;
+}
+.fcf-contact-form .textarea:focus, .fcf-contact-form .input:focus, .fcf-contact-form .submit:focus{
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.fcf-contact-form .req {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 9px;
+}
+.fcf-contact-form .submit {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding:10px;
+    margin: 10px 0 0 0;
+    float: right;
+}
+.fcf-alphabet {
+    width:20px;
+    height:20px;
+    border-radius:50px;
+    position:absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color:#fff;
+}
+.fcf-message {
+    color:white;
+    font-size:40px;
+    display:none;
+    text-align:center;
+}
+.fcf-contact .buttons-set{
+    border:0;
+    padding:15px 20px 0 0;
+}
+.magazento-powered, .magazento-powered a {
+     color: #888;
+     font-size: 9px;
+     text-align: right;
+     text-decoration: none;
+     margin: 0;
+}

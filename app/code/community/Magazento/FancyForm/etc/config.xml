@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!-- 
+/*
+*  Created on Sep 10, 2012
+*  Author Kate Mironova - ktmironova@gmail.com - Magazento.com
+*  Copyright Proskuryakov Ivan. Magazento.com © 2012. All Rights Reserved.
+*  Single Use, Limited Licence and Single Use No Resale Licence ["Single Use"]
+*/
+-->
+<config>
+    <modules>
+        <Magazento_FancyForm>
+            <version>0.1.1</version>
+        </Magazento_FancyForm>
+    </modules>
+    <frontend>
+        <routers>
+            <contacts>
+                <use>standard</use>
+                <args>
+                    <module>Magazento_FancyForm</module>
+                    <frontName>contacts</frontName>
+                </args>
+            </contacts>
+        </routers>
+        <layout>
+            <updates>
+                <fancyform>
+                    <file>magazento_fancyform.xml</file>
+                </fancyform>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <fancyform>
+                <use>admin</use>
+                <args>
+                    <module>Magazento_FancyForm</module>
+                    <frontName>fancyform</frontName>
+                </args>
+            </fancyform>
+        </routers>
+    </admin>
+    <global>
+        <models>
+            <fancyform>
+                <class>Magazento_FancyForm_Model</class>
+                <resourceModel>fancyform_resource</resourceModel>
+            </fancyform>
+            <fancyform_resource>
+                <class>Magazento_FancyForm_Model_Resource</class>
+                <deprecatedNode>FancyForm_mysql4</deprecatedNode>
+                <entities>
+                    <fancyform>
+                        <table>fancyform</table>
+                    </fancyform>
+                </entities>
+            </fancyform_resource>
+        </models>
+        <resources>
+            <fancyform_setup>
+                <setup>
+                    <module>Magazento_FancyForm</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </fancyform_setup>
+            <fancyform_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </fancyform_write>
+            <fancyform_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </fancyform_read>
+        </resources>
+        <blocks>
+            <fancyform>
+                <class>Magazento_FancyForm_Block</class>
+                <rewrite>
+                    <contactform>Magazento_FancyForm_Block_ContactForm</contactform>
+                </rewrite>
+            </fancyform>
+        </blocks>
+        <helpers>
+            <fancyform>
+                <class>Magazento_FancyForm_Helper</class>
+            </fancyform>
+        </helpers>
+    </global>
+    <default>
+        <fancyform>
+            <options>
+                <enable>1</enable>
+                <blocktitle>Contact Us</blocktitle>
+                <thanksText>Well Done, thank you for your message !</thanksText>
+            </options>
+            <visual>
+                <enablejquery>1</enablejquery>
+                <textAppearingTime>1000</textAppearingTime>
+                <letterMovingTime>3000</letterMovingTime>
+                <envelopeOpeningTime>1000</envelopeOpeningTime>
+                <envelopeClosingTime>1000</envelopeClosingTime>
+                <letterFadingInTime>300</letterFadingInTime>
+                <letterFadingOutTime>300</letterFadingOutTime>
+                <stampAppearingTime>1000</stampAppearingTime>
+            </visual>
+            <blocks>
+                <top>fancyformtop</top>
+                <bottom>fancyformbottom</bottom>
+                <confirmation>fancyformconfirmation</confirmation>
+            </blocks>
+        </fancyform>
+    </default>
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <fancyform translate="title" module="fancyform">
+                                            <title>FancyForm</title>
+                                        </fancyform>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Magazento_FancyForm",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Must have extension for magento. This extensions replaces default magento's contact from ",
+    "authors": [
+    {
+        "name": "volgodark",
+        "email": "volgodark@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

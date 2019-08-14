@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Magazento_FancyForm</name>
+    <version>0.1.2</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Must have extension for magento. This extensions replaces default magento's contact from </summary>
+    <description>Contact Form is one of the most important page for all websites/blogs. If you&#x2019;re using Magento CMS, than it is one of the easiest things to do. &#xD;
+&#xD;
+This is an elegant solution that puts a &#x201C;sliding contact panel&#x201D; on your Magento site. Contact form can complement just about any magento installation in a good way. Its simple and straight forward layout makes for an easy way for the visitor to get in touch with you.</description>
+    <notes>0.1.2</notes>
+    <authors><author><name>volgodark</name><user>volgodark</user><email>volgodark@gmail.com</email></author></authors>
+    <date>2012-12-06</date>
+    <time>15:44:33</time>
+    <contents><target name="magecommunity"><dir name="Magazento"><dir name="FancyForm"><dir name="Block"><file name="ContactForm.php" hash="3bd5f955881391e7edf617b11a576be8"/><file name="Developer.php" hash="2bcbc3b768b66c7351e971a06b821332"/></dir><dir name="Helper"><file name="Data.php" hash="abad8d7e28bbff06f44de1dd17d9e69b"/></dir><dir name="Model"><file name="Data.php" hash="31705ba8bc1c2d7755ab1d1ed06a6ba4"/></dir><dir name="controllers"><file name="IndexController.php" hash="72ad879a85edd2cf69a6ac83a5796a33"/><file name="IndexController_1.php" hash="efa02f7a2349952fbf057c6f01fe3f87"/></dir><dir name="etc"><file name="config.xml" hash="5d5ae57fd5fac62aafb36cccd5997d7a"/><file name="config_1.xml" hash="a2d4f9b2d2ff7bee652ca8175bd7b338"/><file name="system.xml" hash="561e4319a326d8c4f27ccf29034373b4"/></dir><dir name="sql"><dir name="fancyform_setup"><file name="mysql4-install-0.1.1.php" hash="c3b16717933f315bc17b0104ec22dc47"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="magazento_fancyform"><file name="form.phtml" hash="1a8a8ff4338b9b202b77b5cb58ef2e7f"/><file name="magazento.phtml" hash="8402cf8d9cf6beca0874a5fcca61a8b5"/></dir></dir><dir name="layout"><file name="magazento_fancyform.xml" hash="dbd4d0bd1fcec3bcea63f0702ca589d8"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magazento_FancyForm.xml" hash="edfd636497e4a91d512877defcc5b005"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="magazento_fancyform"><dir name="images"><file name="bg.jpg" hash="80de7b220919f088d9a575eeb68e094e"/><file name="envelope-bg.png" hash="6ea6a638222d52a85cd58cd31c11a115"/><file name="envelope-ft.png" hash="f65ca8ceb80d9c1b81955e8666d745d3"/><file name="letter.png" hash="e9c3b44371d17599c90e868c001d6d52"/><dir name="stamp"><file name="lines.png" hash="5a21bf7dc3e0abe030c9ac1b63792285"/><file name="photo.jpg" hash="bfdf06cd3ec7c70219b783dc0b836db3"/><file name="stamp.png" hash="3bd3306631516473eef28ca7a334a3ee"/><file name=".DS_Store" hash="335296bd3fa84e6d90be11089f924b8a"/></dir><file name=".DS_Store" hash="269dd94a108e19f45cecbd0545e43755"/></dir><dir name="js"><file name="fancyContactForm.js" hash="bff3c5d03ea3826bf9160584e47e89e7"/><file name="fancyContactForm.min.js" hash="243b3963b0d61d15cb3b5a60045eef04"/><file name="jquery-1.7.1.min.js" hash="4bab8348a52d17428f684ad1ec3a427e"/></dir><file name="reset.css" hash="3f646f8f63c2a50c9d7c473e45ba737a"/><file name="style.css" hash="b058edd90f64199e400786d0a4b1aa27"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<!-- 
+/*
+ *  Created on Sep 10, 2012
+ *  Author Kate Mironova - ktmironova@gmail.com - Magazento.com
+ *  Copyright Proskuryakov Ivan. Magazento.com © 2011. All Rights Reserved.
+ *  Single Use, Limited Licence and Single Use No Resale Licence ["Single Use"]
+ */
+ -->
+<config>
+    <modules>
+        <Magazento_FancyForm>
+            <version>0.1.0</version>
+        </Magazento_FancyForm>
+    </modules>
+    <frontend>
+        <routers>
+            <fancyform>
+                <use>standard</use>
+                <args>
+                    <module>Magazento_FancyForm</module>
+                    <frontName>fancyform</frontName>
+                </args>
+            </fancyform>
+            <contacts>
+                <args>
+                    <modules>
+                        <Magazento_FancyForm before="Mage_Contacts">Magazento_FancyForm</Magazento_FancyForm>
+                    </modules>
+                </args>
+            </contacts> 
+        </routers>
+        <layout>
+            <updates>
+                <fancyform>
+                    <file>magazento_fancyform.xml</file>
+                </fancyform>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <fancyform>
+                <use>admin</use>
+                <args>
+                    <module>Magazento_FancyForm</module>
+                    <frontName>fancyform</frontName>
+                </args>
+            </fancyform>
+        </routers>
+    </admin>
+<!--    <adminhtml>
+        <menu>
+            <magazento translate="title" module="fancyform">
+                <title>Magazento</title>
+                <sort_order>65</sort_order>               
+                <children>
+                    <fancyform translate="title" module="fancyform">    
+                        <title>Fancy Form</title>
+                        <sort_order>70</sort_order>
+                        <children>
+                            <settings module="fancyform">
+                                <title>Settings</title>
+                                <sort_order>0</sort_order>
+                                <action>adminhtml/system_config/edit/section/fancyform</action>
+                            </settings>
+                        </children>
+                    </fancyform>
+                </children>
+            </magazento>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <fancyform translate="title" module="fancyform">
+                                            <title>FancyForm</title>
+                                        </fancyform>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <fancyform>
+                    <file>fancyform.xml</file>
+                </fancyform>
+            </updates>
+        </layout>
+    </adminhtml>   -->
+    <global>
+        <models>
+            <fancyform>
+                <class>Magazento_FancyForm_Model</class>
+                <resourceModel>fancyform_mysql4</resourceModel>
+            </fancyform>
+            <fancyform_mysql4>
+                <class>Magazento_FancyForm_Model_Mysql4</class>
+                <entities>
+                    <fancyform>
+                        <table>fancyform</table>
+                    </fancyform>
+                </entities>
+            </fancyform_mysql4>
+        </models>
+        <resources>
+            <fancyform_setup>
+                <setup>
+                    <module>Magazento_FancyForm</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </fancyform_setup>
+            <fancyform_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </fancyform_write>
+            <fancyform_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </fancyform_read>
+        </resources>
+        <blocks>
+            <fancyform>
+                <class>Magazento_FancyForm_Block</class>
+                <rewrite>
+                    <contactform>Magazento_FancyForm_Block_ContactForm</contactform>
+                </rewrite>
+            </fancyform>
+        </blocks>
+        <helpers>
+            <fancyform>
+                <class>Magazento_FancyForm_Helper</class>
+            </fancyform>
+        </helpers>
+        <rewrite>
+            <magazento_fancyform_contacts_index>
+                <from><![CDATA[#^/contacts/#]]>
+                </from>
+                <to>/fancyform/index/</to>
+            </magazento_fancyform_contacts_index>
+        </rewrite> 
+    </global>
+    <default>
+        <fancyform>
+            <options>
+                <enable>1</enable>
+                <blocktitle>Contact Us</blocktitle>
+                <thanksText>Well Done, thank you for your message !</thanksText>
+            </options>
+            <visual>
+                <textAppearingTime>1000</textAppearingTime>
+                <letterMovingTime>3000</letterMovingTime>
+                <envelopeOpeningTime>1000</envelopeOpeningTime>
+                <envelopeClosingTime>1000</envelopeClosingTime>
+                <letterFadingInTime>300</letterFadingInTime>
+                <letterFadingOutTime>300</letterFadingOutTime>
+                <stampAppearingTime>1000</stampAppearingTime>
+            </visual>
+        </fancyform>
+    </default>
+</config>

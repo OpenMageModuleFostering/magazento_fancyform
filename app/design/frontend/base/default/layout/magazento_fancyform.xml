@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    
+    <default>       
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>magazento_fancyform/style.css</stylesheet>
+            </action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/template" template="magazento_fancyform/magazento.phtml" />
+        </reference>        
+    </default>  
+
+    <contacts_index_index translate="label">
+        <label>Contact Us Form</label>
+        <reference name="head">
+            <action method="setTitle" translate="title" module="contacts"><title>Contact Us</title></action>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+            <action method="setHeaderTitle" translate="title" module="fancyform"><title>Contact Us</title></action>
+        </reference>
+        <reference name="content">
+            <remove name="contactForm" />
+            <block type="fancyform/contactform" name="contactFancyForm" template="magazento_fancyform/form.phtml"/>
+        </reference>
+    </contacts_index_index>
+   
+</layout>

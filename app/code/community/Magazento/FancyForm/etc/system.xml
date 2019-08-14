@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<!-- 
+/*
+*  Created on Sep 10, 2012
+*  Author Kate Mironova - ktmironova@gmail.com - Magazento.com
+*  Copyright Proskuryakov Ivan. Magazento.com © 2012. All Rights Reserved.
+*  Single Use, Limited Licence and Single Use No Resale Licence ["Single Use"]
+*/
+-->
+<config>
+    <tabs>
+        <magazento translate="label">
+            <label>Magazento.com</label>
+            <sort_order>250</sort_order>
+        </magazento>
+    </tabs>
+    <sections>
+        <fancyform translate="label" module="fancyform">
+            <label>Fancy Form</label>
+            <tab>magazento</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+	    <groups>
+		<developer>
+                    <frontend_model>fancyform/developer</frontend_model>
+                    <sort_order>999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </developer>
+		   <options translate="label">
+                    <label>Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <blocktitle translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </blocktitle>
+			<additionaltext translate="label">
+                            <label>Additional Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </additionaltext>
+			<thanksText translate="label">
+                            <label>thanksText</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </thanksText>
+ 		</fields>
+	</options>
+	<visual translate="label">
+                    <label>Visual Effects</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enablejquery translate="label">
+                            <label>Enable jquery library</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enablejquery>
+			 <textAppearingTime translate="label">
+                            <label>textAppearingTime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </textAppearingTime>
+			<letterMovingTime translate="label">
+                            <label>letterMovingTime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </letterMovingTime>
+			<envelopeOpeningTime translate="label">
+                            <label>envelopeOpeningTime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </envelopeOpeningTime>
+			<envelopeClosingTime translate="label">
+                            <label>envelopeClosingTime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </envelopeClosingTime>
+			<letterFadingInTime translate="label">
+                            <label>letterFadingInTime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </letterFadingInTime>
+			<letterFadingOutTime translate="label">
+                            <label>letterFadingOutTime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </letterFadingOutTime>
+			<stampAppearingTime translate="label">
+                            <label>stampAppearingTime</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </stampAppearingTime>
+
+		</fields>
+	</visual>
+        <blocks translate="label">
+                    <label>Blocks</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <top translate="label">
+                            <label>Top Block</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top>
+                        <bottom translate="label">
+                            <label>Bottom Block</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bottom>
+                        <confirmation translate="label">
+                            <label>Confirmation Block</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </confirmation>
+                    </fields>
+        </blocks>
+	</groups>
+        </fancyform>
+    </sections>
+</config>
